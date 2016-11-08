@@ -1,0 +1,11 @@
+/*.post-content {
+  border: 2px solid black;
+}*/
+
+.side-bar {
+  border-right: 1px solid black;
+}
+
+.side-item {
+ /* border: 2px solid black;*/
+}

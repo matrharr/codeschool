@@ -1,0 +1,4 @@
+<% if admin %>
+    <%= link_to "Edit category", edit_category_path(category) %>
+<% end %>
+<%= raw category.intro %>

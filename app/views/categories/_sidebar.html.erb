@@ -1,0 +1,6 @@
+<% posts.each do |post| %>
+  <div class="side-item">   
+    <h4><%= link_to post.title, category_post_path(category, post) %></h4>
+    <br> 
+  </div>  
+<% end %>

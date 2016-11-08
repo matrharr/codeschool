@@ -1,0 +1,27 @@
+<p>terms: iteration, index</p>
+
+
+<p>An array is basically a list of items. The array is a data type and the list of items it contains will also be of some data type. They could be strings, numbers or even arrays. A single array may hold different data types. Arrays look like this: [1,2,3]. Their contents are confined inside of braces and each item in the array is separated with a comma.</p>
+
+<p>You can initialize an array like this:</p>
+<pre><code>arr = Array.new</code></pre>
+<p>Which will return an empty array:</p>
+<samp>[]</samp>
+
+<p>You can also pass the array an integer argument that will instantiate it with that many elements:</p>
+<pre><code>arr = Array.new(6)</code></pre>
+<p>Which returns:</p>
+<pre><code>[nil, nil, nil, nil, nil, nil]</code></pre>
+<p>This doesn't really mean much, just that there are now six nil values in the array.</p>
+
+<p>What if you wanted to create an array with the values 1-6?</p>
+<pre><code>n = 0
+arr = Array.new(6) {n += 1}</code></pre>
+<p>returns:</p>
+<pre><code>[1, 2, 3, 4, 5, 6]</code></pre>
+<p> The curly braces after <code>Array.new(6)</code> is called a block and run each time the Array runs the <code>new</code> method(which is 6 times) and fills the array. <code>n</code> is a variable initially with the value 0. Each time the <code>new</code> method runs, <code>n</code> adds 1 to itself, ultimately filling the array with values 1-6.</p>
+
+
+<p>Indices: Just like you might number the items on your grocery list, an array numbers all of its elements to a corresponding index. An array's first element is located at index 0, the second at index 1, etc. To return the value of an array at a given index you would call: array[1], which would return the second element in the array. </p>
+
+<p>Iteration: Once you have an array with multiple items in it, you will likely want to pull items out, add an item at a specific location in the list or check if a particular item is within the list. The way you look through an array is with iteration. Iteration can be implemented in tons of different ways, but in general all it means is you look at one item in the array and run some code, then check the next item and run the same code, then the next item and so on until you reach the end of the list, at which point the iteration terminates.</p>

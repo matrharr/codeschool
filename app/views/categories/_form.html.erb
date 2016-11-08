@@ -1,0 +1,30 @@
+<%= simple_form_for @category do |f|%>
+  
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= "#{pluralize(@category.errors.count, "error")} prohibited this category from being saved:" %>
+      </h2>
+      <ul>
+        <% @category.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  
+  <%= f.input :title, class: "form-control" %>
+
+
+    
+  <%= f.input :intro, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
+
+  
+  <%= f.button :submit, class: "form-control"%>
+
+
+<% end %>

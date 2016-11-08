@@ -1,0 +1,15 @@
+<div class="col-sm-11 col-xs-12 blog-content">
+  <h2 class="text-center"><%= @category.title %></h2>
+    <div class="container-fluid">
+
+
+      <div class="row-fluid">
+        <div class="col-sm-2">
+          <%= render 'sidebar', posts: @category.posts, category: @category %>
+        </div>
+        <div class="col-sm-10 post-content">
+          <%= render 'intro', category: @category %>
+        </div>
+      </div>
+    </div>
+</div>
