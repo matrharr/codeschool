@@ -31,6 +31,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'ckeditor', '~> 4.1'
 gem 'bcrypt', '~> 3.1.7'
 gem 'mini_magick'
+gem 'rails_12factor', group: :production
 
 
 # Use Capistrano for deployment
