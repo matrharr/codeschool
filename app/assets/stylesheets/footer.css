@@ -1,0 +1,5 @@
+.footer {
+  padding-top: 50px;
+  /*background-color: #708090;*/
+  background: linear-gradient(135deg, #708090 21px, #708090 22px, #708090 24px, #708090 67px, #708090 69px)
+}

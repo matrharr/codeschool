@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CodeSchool</title>
+    <title>The Chronos Project</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,8 +10,11 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
-    <%= render 'layouts/navbar', categories: @categories %>
+    <div id="page-top">
+      <%= render 'layouts/navbar', categories: @categories %>
+      <%= render 'layouts/header' %>
+    </div>
     <%= yield %>
+    <%= render 'layouts/footer'%>
   </body>
 </html>

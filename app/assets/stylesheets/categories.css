@@ -1,11 +1,11 @@
 #nav {
-  border-top: 3px solid black;
+background: rgba(225, 225, 225, .6);
 }
 
 .nav-el {
   font-size: 16px;
   color: black;
-  opacity: .7;
+  opacity: .9;
 }
 
 .sidebar-item {
