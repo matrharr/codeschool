@@ -1,0 +1,19 @@
+.info-block {
+}
+
+.info-block-title {
+  font-family: monospace;
+}
+
+
+.info-block-content {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/*sets the container width*/
+@media (min-width: 800px) {
+    .container{
+        max-width: 800px;
+    }
+}
