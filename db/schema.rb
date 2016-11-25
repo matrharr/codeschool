@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20161104061821) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "categories", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -30,8 +33,8 @@ ActiveRecord::Schema.define(version: 20161104061821) do
     t.integer  "height"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.index ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
-    t.index ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
+    t.index ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+    t.index ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
   end
 
   create_table "posts", force: :cascade do |t|
