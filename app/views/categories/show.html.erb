@@ -5,7 +5,7 @@
 
       <div class="row-fluid">
         <div class="col-sm-2">
-          <%= render 'sidebar', posts: @category.posts, category: @category %>
+          <%= render 'sidebar', posts: @category.posts.order('created_at ASC'), category: @category %>
         </div>
         <div class="col-sm-10 post-content">
           <%= render 'intro', category: @category %>
