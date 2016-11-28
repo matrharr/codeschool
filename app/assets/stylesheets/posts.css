@@ -9,3 +9,8 @@
 .side-item {
  /* border: 2px solid black;*/
 }
+
+.post-title {
+  color: #708090;
+  text-decoration: underline;
+}
