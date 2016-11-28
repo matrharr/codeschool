@@ -3,11 +3,12 @@
 
 .info-block-title {
   font-family: monospace;
+  font-size: 50px;
 }
 
 
 .info-block-content {
-  font-size: 20px;
+  font-size: 30px;
   font-family: monospace;
 }
 
@@ -16,4 +17,25 @@
     .container{
         max-width: 800px;
     }
+}
+
+.top {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.cards {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background:  linear-gradient(225deg, #d9ecff 22px, #d9ecff 24px, #d9ecff 67px, #d9ecff 69px);
+}
+
+.bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.info-list {
+  font-size: 20px;
 }
