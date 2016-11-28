@@ -32,7 +32,7 @@ gem 'ckeditor', '~> 4.1'
 gem 'bcrypt', '~> 3.1.7'
 gem 'mini_magick'
 gem 'rails_12factor', group: :production
-
+gem "font-awesome-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
