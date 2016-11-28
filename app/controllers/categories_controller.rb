@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_filter :authorize, :except => [:show, :index]
 
   def index
-    @categories = Category.all
+    @categories = Category.all.order('created_at ASC')
   end
 
   def show
