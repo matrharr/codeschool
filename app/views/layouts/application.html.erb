@@ -11,7 +11,7 @@
 
   <body>
     <div id="page-top">
-      <%= render 'layouts/navbar', categories: @categories %>
+      <%= render 'layouts/navbar', categories: @categories.order('created_at ASC') %>
       <%= render 'layouts/header' %>
     </div>
     <%= yield %>
