@@ -42,6 +42,8 @@
         <%= link_to "New Post", new_post_path %>
       </div>
     <% end %>
+    <div class="col-sm-2">
+    </div>
     <div class="col-sm-3">
       <% if current_user %>
         Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
