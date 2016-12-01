@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-sm-11 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @category.title %></h2>
+  <h2 class="text-center"><%= link_to @category.title, category_path(@category), :style => 'color:black;text-decoration:none'%></h2>
     <div class="container-fluid">
 
       <div class="row-fluid">
