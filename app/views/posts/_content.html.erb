@@ -1,6 +1,7 @@
 <h4>
   <% if admin %>
     <a href="/posts/<%= post.id %>/edit">Edit Post</a>
+    <%= link_to "Delete post", post_path(post), method: :delete %>
   <% end %>
   <h2 class="post-title"><%= post.title %></h2>
   <br>
