@@ -39,6 +39,16 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def destroy
+    @category = Category.find(params[:id])
+    if @category.destroy
+      flash[:notice] = "Successfully deleted post!"
+      redirect_to categories_path
+    else
+      flash[:alert] = "Error updating post!"
+    end
+  end
+
   private
 
   def category_params
